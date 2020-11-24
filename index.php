@@ -21,11 +21,14 @@ get_header(); ?>
 				// Start the Loop.
 				while ( have_posts() ) :
 					the_post();
+					
+					// Get post format.
+					$post_type = get_post_format();
+					
+					// force excerpt format on any post with the default post type
+					$post_type = (empty($post_type)) ? 'excerpt' : $post_type;
 
-					/*
-					 * Force using the Excerpt template in the index
-					 */
-					get_template_part( 'template-parts/post/content', 'excerpt' );
+					get_template_part( 'template-parts/post/content', $post_type );
 
 				endwhile;
 
