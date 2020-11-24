@@ -1,0 +1,40 @@
+/*
+ Theme Name:   Twenty Seventeen (OneLoneCoder Edition)
+ Description:  Twenty Seventeen Child Theme for OneLoneCoder.com
+ Author:       Moros1138
+ Author URI:   https://www.github.com/Moros1138
+ Template:     twentyseventeen
+ Text Domain:  olc-twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.entry-content ul, .entry-content ol {
+    padding-left: 50px;
+}
+
+.entry-content ul ul,
+.entry-content ol ol,
+.entry-content ul ol,
+.entry-content ol ul {
+    padding-left: 0;
+}
+
+@media screen and (min-width: 48em) {
+	.wrap {
+		max-width: 1300px;
+	}
+
+	.has-sidebar:not(.error404) #primary {
+		width: 70%;
+	}
+
+	.has-sidebar #secondary {
+		width: 27%;
+	}
+
+	.navigation-top .wrap {
+		max-width: 1300px;
+	}
+}
