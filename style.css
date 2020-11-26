@@ -9,6 +9,82 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
+/*
+	Shoutout to SaladinAkara who is mostly responsible for the
+	styles that make this theme stand out.
+
+	Original Color: #77dff4
+	Color We Use and Pitch to Javid:  #b0e2fe
+
+	TABLE OF CONTENTS
+
+	1. PAGE FORMATTING
+	2. POST FORMATTING - HEADER
+	3. RATING FORMATTING
+	4. POST FORMATTING - CONTENT
+	5. RESPONSIVE STYLES
+
+*/
+
+/* 1. PAGE FORMATTING */
+.site-branding {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+#content.site-content {
+	padding-top: 60px;
+}
+
+
+/* 2. POST FORMATTING - HEADER */
+
+/* .byline is set to none for excerpts, for reasons... */
+.olc-entry .entry-meta .byline {
+	display: inline;
+}
+
+.olc-entry .entry-title {
+	font-weight: 600 !important;
+}
+
+.olc-entry .entry-meta {
+	font-weight: 400;
+	text-transform: none;
+}
+
+.olc-entry .entry-title,
+.olc-entry .entry-title a,
+.olc-entry .entry-meta a {
+	border: 0 !important;
+	text-decoration: none;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	color: #b0e2fe !important;
+}
+
+.olc-entry .entry-title a:hover,
+.olc-entry .entry-meta a:hover {
+	text-decoration: underline;
+}
+
+/* 3. RATING FORMAT */
+
+.olc-entry .entry-meta .rmp-results-widget {
+	display: inline;
+	padding-left: 1em;
+}
+
+.olc-entry .entry-meta .rmp-icon--ratings {
+	font-size: 0.6rem;
+}
+
+.olc-entry .entry-meta .rmp-results-widget__avg-rating,
+.olc-entry .entry-meta .rmp-results-widget__vote-count {
+	font-size: 0.6rem;
+}
+
+/* 4. POST FORMATTING - CONTENT */
 
 .entry-content ul, .entry-content ol {
     padding-left: 50px;
@@ -19,6 +95,34 @@
 .entry-content ul ol,
 .entry-content ol ul {
     padding-left: 0;
+}
+
+.olc-entry .link-more {
+	display: inline-block;
+	border: 1px solid #b0e2fe;
+	padding: 6px 8px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.olc-entry .link-more .more-link {
+	border: 0 !important;
+	text-decoration: none;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	color: #b0e2fe;
+}
+
+
+/* 5. RESPONSIVE STYLES */
+
+@media screen and (max-width: 480px) {
+	.olc-entry .entry-meta .rmp-results-widget {
+		display: block;
+		padding: 0;
+		margin-top: 3px;
+	}
 }
 
 @media screen and (min-width: 48em) {
