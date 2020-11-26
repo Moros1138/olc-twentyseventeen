@@ -23,12 +23,12 @@ get_header(); ?>
 					the_post();
 					
 					// Get post format.
-					$post_type = get_post_format();
+					$post_format = get_post_format();
 					
-					// force excerpt format on any post with the default post type
-					$post_type = (empty($post_type)) ? 'excerpt' : $post_type;
+					// force excerpt format on any post with the default post format
+					$post_format = (empty($post_format)) ? 'excerpt' : $post_format;
 
-					get_template_part( 'template-parts/post/content', $post_type );
+					get_template_part( 'template-parts/post/content', $post_format );
 
 				endwhile;
 
